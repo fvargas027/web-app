@@ -6,6 +6,17 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+@use '@angular/material' as mat;
+
+:host {
+  @include mat.button-overrides(
+    (
+      filled-container-color: var(--rr-blue-700),
+      filled-label-text-color: white
+    )
+  );
+}
+
 .birt-download {
   display: flex;
   flex-direction: column;
